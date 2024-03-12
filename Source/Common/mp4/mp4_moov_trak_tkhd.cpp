@@ -17,7 +17,7 @@
 //---------------------------------------------------------------------------
 void mp4_moov_trak_tkhd::Read_Internal()
 {
-    Chunk.trak_Index=Global->moov_trak.size();
+    Chunk.trak_Index=Global->moov_trak.size()-1;
 
     Read_Internal_ReadAllInBuffer();
 
